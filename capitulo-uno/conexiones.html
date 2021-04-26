@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>2.1 NodeMCU · GitBook</title>
+        <title>3 Conexiones · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -69,10 +69,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="shield.html" />
+    <link rel="next" href="../capitulo-dos/" />
     
     
-    <link rel="prev" href="material.html" />
+    <link rel="prev" href="ldr.html" />
     
 
     </head>
@@ -148,7 +148,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="2.2.1" data-path="NodeMCU.html">
+        <li class="chapter " data-level="2.2.1" data-path="NodeMCU.html">
             
                 <a href="NodeMCU.html">
             
@@ -231,7 +231,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3" data-path="conexiones.html">
+        <li class="chapter active" data-level="2.3" data-path="conexiones.html">
             
                 <a href="conexiones.html">
             
@@ -327,7 +327,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >2.1 NodeMCU</a>
+        <a href=".." >3 Conexiones</a>
     </h1>
 </div>
 
@@ -342,13 +342,21 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="nodemcu">NodeMCU</h1>
-<p><img src="../assets/esp8266.jpg" alt=""></p>
-<p>Es una placa de desarrollo basado el el SoC  (<a href="https://es.wikipedia.org/wiki/System_on_a_chip" target="_blank">Sytem on a chip</a>) ESP8266 e incorpora la comunicaci&#xF3;n Wifi que tanto falta en el Arduino.</p>
-<p>Desde que sali&#xF3; el ESP01 como primer m&#xF3;dulo del ESP8266, se ha evolucionado mucho, mejorando la popularidad, potencialidad y bajando los precios. Actualmente (2020) se fabrica el ESP32.</p>
-<p>Nosotros utilzamos en el Rover el NodeMCU basado en el ESP12E conocida como <strong>NodeMCU</strong> que apareci&#xF3; en el 2014 que se programaba con <a href="www.lua.org">Lua</a>.</p>
-<p>Con el paso del tiempo esta placa se programa en varios lenguajes, siendo la m&#xE1;s interesante desde el punto pedag&#xF3;gico que se pueda programar en el did&#xE1;ctico <strong>entorno Arduino</strong>.</p>
-<p>Para m&#xE1;s informaci&#xF3;n recomendamos la p&#xE1;gina de Luis Llamas (<a href="https://www.luisllamas.es/esp8266-nodemcu/" target="_blank">https://www.luisllamas.es/esp8266-nodemcu/</a>)</p>
+                                <h1 id="conexiones">Conexiones.</h1>
+<h2 id="conexiones-motores-y-bater&#xED;a">Conexiones motores y bater&#xED;a</h2>
+<p>Este es el esquema de conexi&#xF3;n de los motores y de la bater&#xED;a con el Shield :</p>
+<p><img src="../assets/conexiones.jpg" alt=""></p>
+<p>Una alternativa a la conexi&#xF3;n de la bater&#xED;a es utilizar un PowerBank y dir&#xE9;ctamente al NodeMCU como podemos ver en la foto :</p>
+<p><img src="../assets/powerbank.jpg" alt=""></p>
+<h2 id="conexiones-nodemcu-sensores-con-la-shield">Conexiones NodeMCU sensores con la Shield.</h2>
+<p>El sensor de efecto Hall y el sensor DHT22 lo conectaremos a las entradas digitales, nosotros hemos elegido</p>
+<ul>
+<li>DHT22 a D5</li>
+<li>Efecto Hall al D6</li>
+</ul>
+<p>Es recomendable no usar D4 pues lo utilizaremos como Led</p>
+<p>El sensor de luz LDR al ser anal&#xF3;gico, lo conectaremos en la &#xFA;nica entrada anal&#xF3;gica que tiene esta shield</p>
+<p><img src="../assets/conexion-sensores.jpg" alt=""></p>
 <p><div id="page-footer" class="localized-footer"><hr><p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a><br><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Rover Arduino</span> por <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">CONSEJER&#xCD;A DE EDUCACI&#xD3;N Y FORMACION PROFESIONAL GOBIERNO DE CANTABRIA</span> bajo licencia <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional License</a>.</p>
 </div></p>
 
@@ -378,12 +386,12 @@
 
             
                 
-                <a href="material.html" class="navigation navigation-prev " aria-label="Previous page: 2 Material">
+                <a href="ldr.html" class="navigation navigation-prev " aria-label="Previous page: 2.6 LDR">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="shield.html" class="navigation navigation-next " aria-label="Next page: 2.2. Shield motor">
+                <a href="../capitulo-dos/" class="navigation navigation-next " aria-label="Next page: Apartado uno capítulo 2">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -394,7 +402,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"2.1 NodeMCU","level":"2.2.1","depth":2,"next":{"title":"2.2. Shield motor","level":"2.2.2","depth":2,"path":"capitulo-uno/shield.md","ref":"capitulo-uno/shield.md","articles":[]},"previous":{"title":"2 Material","level":"2.2","depth":1,"path":"capitulo-uno/material.md","ref":"capitulo-uno/material.md","articles":[{"title":"2.1 NodeMCU","level":"2.2.1","depth":2,"path":"capitulo-uno/NodeMCU.md","ref":"capitulo-uno/NodeMCU.md","articles":[]},{"title":"2.2. Shield motor","level":"2.2.2","depth":2,"path":"capitulo-uno/shield.md","ref":"capitulo-uno/shield.md","articles":[]},{"title":"2.3 Chasis","level":"2.2.3","depth":2,"path":"capitulo-uno/chasis.md","ref":"capitulo-uno/chasis.md","articles":[]},{"title":"2.4 DHT22","level":"2.2.4","depth":2,"path":"capitulo-uno/dht22.md","ref":"capitulo-uno/dht22.md","articles":[]},{"title":"2.5 Hall","level":"2.2.5","depth":2,"path":"capitulo-uno/hall.md","ref":"capitulo-uno/hall.md","articles":[]},{"title":"2.6 LDR","level":"2.2.6","depth":2,"path":"capitulo-uno/ldr.md","ref":"capitulo-uno/ldr.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["youtube","accordion","styled-blockquotes","localized-footer","edit-link","githubcontributors","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"youtube":{},"accordion":{},"search":{},"styled-blockquotes":{},"localized-footer":{"filename":"./FOOTER.md","hline":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-135691041-2"},"githubcontributors":{"contributorWidth":"300px","githubOwner":"catedu","githubRepository":"<nombre-del-repo>"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edita esta página","base":"https://github.com/catedu/<nombre-del-repo>/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"title":"Rover Arduino","authors":["CONSEJERÍA DE EDUCACIÓN Y FORMACION PROFESIONAL GOBIERNO DE CANTABRIA","Javier Quintana"],"collaborators":[{"name":"_________","edited":"_____________"}]},"language":"es","gitbook":"*"},"file":{"path":"capitulo-uno/NodeMCU.md","mtime":"2021-04-26T11:08:54.313Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-04-26T11:09:28.980Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"3 Conexiones","level":"2.3","depth":1,"next":{"title":"Apartado uno capítulo 2","level":"3.1","depth":1,"path":"capitulo-dos/README.md","ref":"capitulo-dos/README.md","articles":[]},"previous":{"title":"2.6 LDR","level":"2.2.6","depth":2,"path":"capitulo-uno/ldr.md","ref":"capitulo-uno/ldr.md","articles":[]},"dir":"ltr"},"config":{"plugins":["youtube","accordion","styled-blockquotes","localized-footer","edit-link","githubcontributors","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"youtube":{},"accordion":{},"search":{},"styled-blockquotes":{},"localized-footer":{"filename":"./FOOTER.md","hline":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-135691041-2"},"githubcontributors":{"contributorWidth":"300px","githubOwner":"catedu","githubRepository":"<nombre-del-repo>"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edita esta página","base":"https://github.com/catedu/<nombre-del-repo>/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"title":"Rover Arduino","authors":["CONSEJERÍA DE EDUCACIÓN Y FORMACION PROFESIONAL GOBIERNO DE CANTABRIA","Javier Quintana"],"collaborators":[{"name":"_________","edited":"_____________"}]},"language":"es","gitbook":"*"},"file":{"path":"capitulo-uno/conexiones.md","mtime":"2021-04-26T11:08:54.313Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-04-26T11:09:28.980Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
