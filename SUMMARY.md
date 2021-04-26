@@ -21,7 +21,9 @@
 * [2.1 Introducción](capitulo-dos/introduccion.md)
 * [2.2 Cuentas alumnos](capitulo-dos/cuentasalumnos.md)
 * [2.3 Driver](capitulo-dos/driver.md)
-* [2.4 Driver](capitulo-dos/empezando.md)
+* [2.4 Empezando](capitulo-dos/empezando.md)
+* [2.5 Intermitente](capitulo-dos/intermitente.md)
+
 
 ---
 
