@@ -4,7 +4,7 @@
 
 ## 1 Intoducción
 
-* [1.1 Breve historia de los rovers](historiarovers.md)
+* [1.1 Pensamiento computacional](pensamientocomputacional.md)
 * [1.2 Material](capitulo-uno/material.md)
   * [1.2.1 NodeMCU](capitulo-uno/NodeMCU.md)
   * [1.2.2. Shield motor](capitulo-uno/shield.md)
@@ -25,6 +25,11 @@
 * [2.5 Intermitente](capitulo-dos/intermitente.md)
 * [2.6 Sensores](capitulo-dos/sensores.md)
 * [2.7 Motores](capitulo-dos/motores.md)
+
+## 3 BLYNK
+
+* [3.1 Qué es](capitulo-dos/blynk.md)
+* [3.2 Crear cuenta](capitulo-dos/cuenta.md)
 
 
 ---

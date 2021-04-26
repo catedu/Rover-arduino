@@ -14,6 +14,8 @@ De Desconocido - [Popular Science Monthly Volume 64, Dominio público](https://c
 
 De [Luis Llamas](https://www.luisllamas.es/detectar-campos-magneticos-con-arduino-y-sensor-hall-a3144/) CC-BY-NC
 
+El sensor tiene un led de color rojo que indica que hay una lectura de campo magnético.
+
 Nuestro rover analizará si las rocas que hay cerca de él tienen ferritas midiendo su componente magnético. Una aproximación tosca de los rovers actuales pero sirve para acercar el mundo de la medición remota al alumnado :
 
 {% youtube %}https://www.youtube.com/watch?v=NphWPvi9cy4{% endyoutube %}

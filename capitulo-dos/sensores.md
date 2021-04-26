@@ -8,6 +8,10 @@ La ventaja de ARDUINOBLOCKS es que tiene ya incorporado una cantidad de bloques 
 
 Vamos a probar este sensor que está conectado en una entrada analógica, para ello simplemente que escriba su valor en el puerto, y veremos cómo va cambiando.
 
+Es recomendable para la lectura de los sensores, crear variables que almacenen los valores leidos, para luego utilizar estos valores:
+
+![](/assets/sensor4.jpg)
+
 El siguiente código lee el sensor cada 2 seg. y lo vemos por el puerto serie. Podemos comprobar que **cuanto más luz, la lectura es menor.**
 
 ![](/assets/sensor1.png)
