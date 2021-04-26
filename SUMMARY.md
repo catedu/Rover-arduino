@@ -16,9 +16,9 @@
 
 
 
-## Capítulo 2
+## ARDUINOBLOCKS
 
-* [Apartado uno capítulo 2](capitulo-dos/README.md)
+* [Introducción](capitulo-dos/introduccion.md)
 * [Apartado dos capítulo 2](capitulo-dos/apartado-uno-cap-dos.md)
 
 ---

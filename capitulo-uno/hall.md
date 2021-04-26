@@ -17,3 +17,7 @@ De [Luis Llamas](https://www.luisllamas.es/detectar-campos-magneticos-con-arduin
 Nuestro rover analizará si las rocas que hay cerca de él tienen ferritas midiendo su componente magnético. Una aproximación tosca de los rovers actuales pero sirve para acercar el mundo de la medición remota al alumnado :
 
 {% youtube %}https://www.youtube.com/watch?v=NphWPvi9cy4{% endyoutube %}
+
+Nuestro robot detectará si hay un imán cerca o no .
+
+{% youtube %}https://www.youtube.com/watch?v=ZqYQaWH_yE4{% endyoutube %}

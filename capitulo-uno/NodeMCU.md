@@ -10,4 +10,11 @@ Nosotros utilzamos en el Rover el NodeMCU basado en el ESP12E conocida como **No
 
 Con el paso del tiempo esta placa se programa en varios lenguajes, siendo la más interesante desde el punto pedagógico que se pueda programar en el didáctico **entorno Arduino**.
 
+>**info**
+> Existen disparidad en los fabricantes, en este curso se va a utilizar la generación segunda de 8 pines
+
+![](/assets/cual.jpg)
+
+De [Luis Llamas](https://www.luisllamas.es/esp8266-nodemcu/) CC-BY-NC-SA
+
 Para más información recomendamos la página de Luis Llamas (https://www.luisllamas.es/esp8266-nodemcu/)
