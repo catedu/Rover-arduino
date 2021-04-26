@@ -4,7 +4,7 @@
 
 ## Intoducción
 
-* [1 Breve historia de los rovers](https://catedu.github.io/rover-marciano-alphabot/rover.html)
+* [1 Breve historia de los rovers](historiarovers.md)
 * [2 Material](capitulo-uno/material.md)
   * [2.1 NodeMCU](capitulo-uno/NodeMCU.md)
   * [2.2. Shield motor](capitulo-uno/shield.md)
