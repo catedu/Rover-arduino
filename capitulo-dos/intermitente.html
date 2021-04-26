@@ -69,7 +69,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../creditos.html" />
+    <link rel="next" href="sensores.html" />
     
     
     <link rel="prev" href="empezando.html" />
@@ -316,6 +316,32 @@
             
         </li>
     
+        <li class="chapter " data-level="3.6" data-path="sensores.html">
+            
+                <a href="sensores.html">
+            
+                    
+                    2.6 Sensores
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="motores.html">
+            
+                <a href="motores.html">
+            
+                    
+                    2.7 Motores
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -389,7 +415,12 @@
 Porque D4 tiene un led integrado en la placa, tambi&#xE9;n D0</p>
 </div></div>
 <p><img src="../assets/led.jpg" alt=""></p>
-<p>El programa es muy sencillo y lo completamos que se puede visualizar por la salida puerto serie, por eso al iniciar iniciamos el puerto serie a 9600 baudios.</p>
+<div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa fa-exclamation-circle"></i></div><div class="hints-container">
+<p></p>
+<h2 id="atenci&#xF3;n">ATENCI&#xD3;N</h2>
+<p>Estos leds van al reves, (configuraci&#xF3;n <a href="https://catedu.github.io/programa-arduino-mediante-codigo/resistencias_pullup_y_pulldown.html" target="_blank">pop-down</a>) luego <strong>para encender el led, D4 tiene que estar a nivel bajo</strong>, y al rev&#xE9;s para apagarlo, D4 en nivel alto.</p>
+</div></div>
+<p>El programa es muy sencillo y lo completamos que se pueda visualizar por la salida puerto serie, por eso al iniciar ponemos el puerto serie a 9600 baudios.</p>
 <p><img src="../assets/led2.png" alt=""></p>
 <p>Le damos a subir (teniendo el programa Arduinoblocks conector minimizado) y en &quot;C&#xF3;nsola&quot; podemos ver el contenido del puerto serie.</p>
 <p></p><div id="page-footer" class="localized-footer"><hr><p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a><br><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Rover Arduino</span> por <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">CONSEJER&#xCD;A DE EDUCACI&#xD3;N Y FORMACION PROFESIONAL GOBIERNO DE CANTABRIA</span> bajo licencia <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional License</a>.</p>
@@ -426,7 +457,7 @@ Porque D4 tiene un led integrado en la placa, tambi&#xE9;n D0</p>
                 </a>
                 
                 
-                <a href="../creditos.html" class="navigation navigation-next " aria-label="Next page: Créditos">
+                <a href="sensores.html" class="navigation navigation-next " aria-label="Next page: 2.6 Sensores">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -437,7 +468,7 @@ Porque D4 tiene un led integrado en la placa, tambi&#xE9;n D0</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"2.5 Intermitente","level":"3.5","depth":1,"next":{"title":"Créditos","level":"4.1","depth":1,"path":"creditos.md","ref":"creditos.md","articles":[]},"previous":{"title":"2.4 Empezando","level":"3.4","depth":1,"path":"capitulo-dos/empezando.md","ref":"capitulo-dos/empezando.md","articles":[]},"dir":"ltr"},"config":{"plugins":["youtube","accordion","styled-blockquotes","localized-footer","edit-link","githubcontributors","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"youtube":{},"accordion":{},"search":{},"styled-blockquotes":{},"localized-footer":{"filename":"./FOOTER.md","hline":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-135691041-2"},"githubcontributors":{"contributorWidth":"300px","githubOwner":"catedu","githubRepository":"<nombre-del-repo>"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edita esta página","base":"https://github.com/catedu/<nombre-del-repo>/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"title":"Rover Arduino","authors":["CONSEJERÍA DE EDUCACIÓN Y FORMACION PROFESIONAL GOBIERNO DE CANTABRIA","Javier Quintana"],"collaborators":[{"name":"_________","edited":"_____________"}]},"language":"es","gitbook":"*"},"file":{"path":"capitulo-dos/intermitente.md","mtime":"2021-04-26T17:33:04.040Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-04-26T17:33:43.316Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"2.5 Intermitente","level":"3.5","depth":1,"next":{"title":"2.6 Sensores","level":"3.6","depth":1,"path":"capitulo-dos/sensores.md","ref":"capitulo-dos/sensores.md","articles":[]},"previous":{"title":"2.4 Empezando","level":"3.4","depth":1,"path":"capitulo-dos/empezando.md","ref":"capitulo-dos/empezando.md","articles":[]},"dir":"ltr"},"config":{"plugins":["youtube","accordion","styled-blockquotes","localized-footer","edit-link","githubcontributors","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"youtube":{},"accordion":{},"search":{},"styled-blockquotes":{},"localized-footer":{"filename":"./FOOTER.md","hline":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-135691041-2"},"githubcontributors":{"contributorWidth":"300px","githubOwner":"catedu","githubRepository":"<nombre-del-repo>"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edita esta página","base":"https://github.com/catedu/<nombre-del-repo>/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"title":"Rover Arduino","authors":["CONSEJERÍA DE EDUCACIÓN Y FORMACION PROFESIONAL GOBIERNO DE CANTABRIA","Javier Quintana"],"collaborators":[{"name":"_________","edited":"_____________"}]},"language":"es","gitbook":"*"},"file":{"path":"capitulo-dos/intermitente.md","mtime":"2021-04-26T18:08:20.629Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-04-26T18:09:03.446Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
