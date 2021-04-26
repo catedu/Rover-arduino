@@ -23,6 +23,8 @@
 * [2.3 Driver](capitulo-dos/driver.md)
 * [2.4 Empezando](capitulo-dos/empezando.md)
 * [2.5 Intermitente](capitulo-dos/intermitente.md)
+* [2.6 Sensores](capitulo-dos/sensores.md)
+* [2.7 Motores](capitulo-dos/motores.md)
 
 
 ---

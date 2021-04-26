@@ -8,7 +8,11 @@ Nuestro primer programa que vamos a hacer es un intermitente en D4
 
 ![](/assets/led.jpg)
 
-El programa es muy sencillo y lo completamos que se puede visualizar por la salida puerto serie, por eso al iniciar iniciamos el puerto serie a 9600 baudios.
+>**danger**
+>##ATENCIÓN
+>Estos leds van al reves, (configuración [pop-down](https://catedu.github.io/programa-arduino-mediante-codigo/resistencias_pullup_y_pulldown.html)) luego **para encender el led, D4 tiene que estar a nivel bajo**, y al revés para apagarlo, D4 en nivel alto.
+
+El programa es muy sencillo y lo completamos que se pueda visualizar por la salida puerto serie, por eso al iniciar ponemos el puerto serie a 9600 baudios.
 
 ![](/assets/led2.png)
 
