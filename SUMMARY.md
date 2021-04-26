@@ -12,6 +12,7 @@
   * [2.4 DHT22](capitulo-uno/dht22.md)
   * [2.5 Hall](capitulo-uno/hall.md)
   * [2.6 LDR](capitulo-uno/ldr.md)
+* [3 Conexiones](capitulo-uno/conexiones.md)
 
 
 
