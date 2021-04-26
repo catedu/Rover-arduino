@@ -2,7 +2,7 @@
 
 ![](/assets/arduinoblocks.png)
 
-Es un programa creado por el profesor Juan José López Almendros:
+Es un programa *online** creado por el profesor Juan José López Almendros:
 
 ![](/assets/juan.jpg)
 

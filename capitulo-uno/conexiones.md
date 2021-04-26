@@ -12,8 +12,6 @@ Una alternativa a la conexión de la batería es utilizar un PowerBank y diréct
 
 Otra posibilidad es utilizar baterías 18650 [ver](https://www.instructables.com/Simplest-Wifi-Car-Using-ESP8266-Motorshield/) pero ojo con usar estas baterías [ver+](https://catedu.github.io/rover-marciano-alphabot/desventajas.html)
 
-Para saber cómo funcionan los motores con esta shield [ver aquí](http://arduinoamuete.blogspot.com/2017/02/doitcar-kit-programacion-con-arduino.html)
-
 ## Conexiones NodeMCU sensores con la Shield.
 
 El sensor de efecto Hall y el sensor DHT22 lo conectaremos a las entradas digitales, nosotros hemos elegido
