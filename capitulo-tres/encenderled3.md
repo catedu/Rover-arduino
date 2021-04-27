@@ -19,9 +19,12 @@ Nada más !! así de sencillo. Le damos a **subir** (teniendo el programa Arduin
 
 ![](/assets/arduinobloks6.jpg)
 
-Vamos a la APP de BLYNK, Pulsamos al botón de play ▶ de arriba arriba. Luego al botón, y podemos ver cómo se enciende y apaga el led D0
+Vamos a la APP de BLYNK, Pulsamos al botón de play ▶ de arriba arriba. Luego al botón:
 
 ![](/assets/blynk10.png)
 
+ Y podemos ver cómo se enciende y apaga el led D0
+
+![](/assets/led.jpg)
 
 ## Recuerda : Un proyecto en BLYNK = Un Token

@@ -4,7 +4,7 @@ Nuestro primer programa que vamos a hacer es un intermitente en D4
 
 >**tip**
 >¿Por qué con D4 y no con otro?
-> Porque D4 tiene un led integrado en la placa, también D0
+> Porque D4 tiene un led integrado en la placa,  también D0.
 
 ![](/assets/led.jpg)
 

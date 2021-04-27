@@ -21,7 +21,9 @@ Pulsamos en PIN y le decimos que sea el D0
 ![](/assets/blynk12.png)
 
 >**success**
-> ##ATENCIÓN
-> La nomenclatura de los pines cambia, el D0 es el GP16, viene de GPIO General Port Input Output
+> ## ATENCIÓN
+> La nomenclatura de los pines cambia, el D0 es el GP16, viene de GPIO General Port Input Output.
+>
+>El D4 es el gp2
 
 ![](/assets/esquemashield.jpg)
