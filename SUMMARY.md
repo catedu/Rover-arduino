@@ -34,8 +34,12 @@
     * [3.3.1 Token](capitulo-tres/encenderled.md)
     * [3.3.2 Button](capitulo-tres/encenderled2.md)
     * [3.3.3 Arduinoblocks](capitulo-tres/encenderled3.md)
-* [3.4 Ver luz](capitulo-tres/ldr.md)
-* [3.5 Ver T y H](capitulo-tres/DHT22.md)
+* [3.4 Endender gradualmente LED](capitulo-tres/encenderled3.md)
+* [3.5 Medir luz](capitulo-tres/ldr.md)
+* [3.6 Medir T y H](capitulo-tres/DHT22.md)
+* [3.7 Medir campo magnético](capitulo-tres/hall.md)
+* [3.8 Motores](capitulo-tres/motores.md)
+
 
 
 
