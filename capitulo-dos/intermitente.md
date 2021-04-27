@@ -16,4 +16,6 @@ El programa es muy sencillo y lo completamos que se pueda visualizar por la sali
 
 ![](/assets/led2.png)
 
-Le damos a subir (teniendo el programa Arduinoblocks conector minimizado) y en "Cónsola" podemos ver el contenido del puerto serie.
+Le damos a **subir** (teniendo el programa Arduinoblocks conector minimizado, eso lo podemos ver enseguida pues detecta en que COM está conectado, en la figura sale COM5) y en **Cónsola** podemos ver el contenido del puerto serie.
+
+![](/assets/arduinobloks6.jpg)
