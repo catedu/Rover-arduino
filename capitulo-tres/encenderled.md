@@ -1,6 +1,10 @@
-# Primer programa con Blynk: Encender D4 : Conseguir el Token
+# Primer programa con Blynk: Encender D0 : Conseguir el Token
 
-Vamos a encender el LED en D4 para ello en la APP Blynk creamos un nuevo proyecto:
+Si antes [hicimos un intermitente por D4](https://catedu.github.io/Rover-arduino/capitulo-dos/intermitente.html), ahora vamos a encender el LED en D0 :
+
+![](/assets/led.jpg)
+
+Para ello en la APP Blynk creamos un nuevo proyecto:
 
 ![](/assets/Blynk5.png)
 
