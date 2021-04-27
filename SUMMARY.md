@@ -35,6 +35,7 @@
     * [3.3.2 Button](capitulo-tres/encenderled2.md)
     * [3.3.3 Arduinoblocks](capitulo-tres/encenderled3.md)
 * [3.4 Ver luz](capitulo-tres/ldr.md)
+* [3.5 Ver T y H](capitulo-tres/DHT22.md)
 
 
 
