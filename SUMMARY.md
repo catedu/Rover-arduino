@@ -44,6 +44,7 @@
 
 * [4.1 Qué es](capitulo-cuatro/quees.md)
 * [4.2 Primer paso: Raspberry](capitulo-cuatro/avanzado1.md)
+* [4.2 Segundo paso: Java](capitulo-cuatro/avanzado2.md)
 
 
 
