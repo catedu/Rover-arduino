@@ -8,6 +8,6 @@ Ponemos dos sliders verticales
 
 ![](/assets/blynk26.png)
 
-Y configuramos uno para V1 y otro para V2:
+Y configuramos uno para V5 y otro para V6:
 
 ![](/assets/blynk34.png)
