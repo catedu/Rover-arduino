@@ -54,3 +54,9 @@ Guardar, reiniciar
 Y comprueba
 
 **java –version**
+
+## Para más cosas
+
+Por ejemplo, desistalarlo, volver a la 11, etc.. visitar esta página :
+
+https://phoenixnap.com/kb/install-java-raspberry-pi
