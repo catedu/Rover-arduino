@@ -2,7 +2,7 @@
 
 * [0 Inicio](README.md)
 
-## 1 Intoducción
+## 1 Introducción
 
 * [1.1 Pensamiento computacional](pensamientocomputacional.md)
 * [1.2 Material](capitulo-uno/material.md)
@@ -30,7 +30,7 @@
 
 * [3.1 Qué es](capitulo-tres/blynk.md)
 * [3.2 Crear cuenta](capitulo-tres/cuenta.md)
-* 3.3 Endender LED
+* [3.3 Endender LED](capitulo-tres/encenderled0.md)
     * [3.3.1 Token](capitulo-tres/encenderled.md)
     * [3.3.2 Button](capitulo-tres/encenderled2.md)
     * [3.3.3 Arduinoblocks](capitulo-tres/encenderled3.md)
@@ -39,6 +39,11 @@
 * [3.6 Medir T y H](capitulo-tres/DHT22.md)
 * [3.7 Medir campo magnético](capitulo-tres/hall.md)
 * [3.8 Motores](capitulo-tres/motores.md)
+
+## 4 AVANZADO: SERVIDOR BLYNK LOCAL
+
+* [4.1 Qué es](capitulo-cuatro/quees.md)
+* [4.2 Primer paso: Raspberry](capitulo-cuatro/avanzado1.md)
 
 
 

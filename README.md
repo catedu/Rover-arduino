@@ -1,4 +1,4 @@
-# ROVER MARCIANO CON NodeMCU AruinoBlocks y BLYNK
+# ROVER MARCIANO CON NodeMCU ARDUINOBLOCKS y BLYNK
 
 ![](/assets/rover.jpg)
 
