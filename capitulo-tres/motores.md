@@ -11,3 +11,5 @@ Ponemos dos sliders verticales
 Y configuramos uno para V5 y otro para V6:
 
 ![](/assets/blynk34.png)
+
+{% youtube %}https://youtu.be/fhz5tYRrmAk{% endyoutube %}

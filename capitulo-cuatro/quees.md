@@ -15,3 +15,11 @@ Estamos liberados de la limitación del número de controles que podemos poner e
 Nuestro rover, la Raspberry y nuestro móvil **tiene que estar en la misma red local**
 
 ![](/assets/esquema2.gif)
+
+## Compensa
+
+Es un esfuerzo configurar la Raspberry pero no es una cosa que tenemos que explicar a los alumnos, y ellos ya tienen TODA la energía para hacer sus proyectos
+
+![](/assets/avanzado3.png)
+
+Además de tener control via web de todos usuarios, pues tú eres el administrador:
