@@ -1,4 +1,4 @@
-# Primer programa con Blynk: Encender D0 : Poner los controles
+# Primer programa con Blynk: Encender D0 : 2 Poner los controles
 
 Una vez dentro del proyecto de la App aparece todo un panel si nada, añadimos controles apretando al + que hay en la parte superior
 

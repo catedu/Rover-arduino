@@ -1,4 +1,4 @@
-# Endender un led con la App BLYNK
+# Primer programa con Blynk: Encender D0
 
 Si antes [hicimos un intermitente por D4](https://catedu.github.io/Rover-arduino/capitulo-dos/intermitente.html), ahora vamos a encender el LED en D0:
 
