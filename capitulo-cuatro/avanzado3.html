@@ -69,7 +69,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../creditos.html" />
+    <link rel="next" href="avanzado4.html" />
     
     
     <link rel="prev" href="avanzado2.html" />
@@ -557,6 +557,19 @@
             
         </li>
     
+        <li class="chapter " data-level="5.5" data-path="avanzado4.html">
+            
+                <a href="avanzado4.html">
+            
+                    
+                    4.4 Cuarto paso: Ejecutar
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -630,27 +643,43 @@
 <h2 id="configurar-serverproperties">Configurar server.properties</h2>
 <p>Necesitamos crear un fichero de configuraci&#xF3;n para las diferentes opciones que queremos en nuestro servidor Blynk.</p>
 <p>Entra en la carpeta creada Blynk y crea el fichero <em>server.properties</em>.</p>
-<p><strong>cd Blynk</strong>
-<strong>sudo nano server.properties</strong></p>
+<p><strong>cd Blynk</strong></p>
+<p><strong>sudo nano server.properties</strong></p>
 <p>A continuaci&#xF3;n se muestra una muestra del posible contenido de server.properties.</p>
-<p>&#xB4;&#xB4;&#xB4;python</p>
-<h1 id="http-and-web-sockets-port">http and web sockets port</h1>
-<p>http.port=8080</p>
-<h1 id="https-and-web-sockets-port">https and web sockets port,</h1>
-<p>https.port=9443</p>
-<h1 id="application-ssl-port-este-es-el-puerto-que-tienes-que-poner-en-la-app">application ssl port ESTE ES EL PUERTO QUE TIENES QUE PONER EN LA APP</h1>
-<p>app.ssl.port=8443</p>
-<h1 id="para-permitir-administrar-la-p&#xE1;gina-de-administrador-fuera-si-no-lo-haces-tiene-que-ser-en-https1270019443admin-luego">para permitir administrar la p&#xE1;gina de administrador fuera, (si no lo haces tiene que ser en <a href="https://127.0.0.1:9443/admin" target="_blank">https://127.0.0.1:9443/admin</a>) luego</h1>
-<p> allowed.administrator.ips=0.0.0.0/0</p>
-<h1 id="es-decir-si-la-ip-de-la-raspberry-es-1921681112-luego-puedo-administrarlo-fuera-en-n-https19216811129443admin">es decir si la ip de la raspberry es 192.168.1.112 luego puedo administrarlo fuera en n <a href="https://192.168.1.112:9443/admin" target="_blank">https://192.168.1.112:9443/admin</a></h1>
-<p>admin.rootPath=/admin</p>
-<h1 id="default-admin-name-and-password-will-be-created-on-initial-server-start">Default admin name and password. Will be created on initial server start</h1>
-<p>admin.email=admin@blynk.cc
-admin.pass=admin</p>
-<p>&#xB4;&#xB4;&#xB4;&#xB4;</p>
+<pre><code class="lang-python"><span class="hljs-comment">#Definir los puertos para que no se solapen</span>
+<span class="hljs-comment">#http and web sockets port</span>
+http.port=<span class="hljs-number">8080</span>
+<span class="hljs-comment">#https and web sockets port,</span>
+https.port=<span class="hljs-number">9443</span>
+<span class="hljs-comment">#application ssl port</span>
+app.ssl.port=<span class="hljs-number">8443</span>
+<span class="hljs-comment"># para permitir administrar la p&#xE1;gina de administrador fuera, (si no lo haces tiene que ser en https://127.0.0.1:9443/admin) luego</span>
+ allowed.administrator.ips=<span class="hljs-number">0.0</span><span class="hljs-number">.0</span><span class="hljs-number">.0</span>/<span class="hljs-number">0</span>
+<span class="hljs-comment"># es decir si la ip de la raspberry es 192.168.1.112 luego puedo administrarlo fuera en n https://192.168.1.112:9443/admin</span>
+admin.rootPath=/admin
+<span class="hljs-comment"># Default admin name and password. Will be created on initial server start</span>
+admin.email=admin@blynk.cc
+admin.<span class="hljs-keyword">pass</span>=admin
+</code></pre>
+<p>No es la &#xFA;nica configuraci&#xF3;n, se puede mejorar o a&#xF1;adir... <a href="https://github.com/blynkkk/blynk-server/blob/master/server/core/src/main/resources/server.properties" target="_blank">aqu&#xED; por ejemplo tienes otra propuesta de server.properties</a></p>
+<h2 id="configurar-mailproperties">Configurar mail.properties</h2>
+<p>Igualmente hay que crear este fichero para que el servidor env&#xED;e por email los tokens de los proyectos</p>
+<p>Entra en la carpeta creada Blynk y crea el fichero <em>mail.properties</em>.</p>
+<p><strong>cd Blynk</strong></p>
+<p><strong>sudo nano mail.properties</strong></p>
+<p>A continuaci&#xF3;n se muestra una muestra del posible contenido de mail.properties utilizando los datos de una cuenta de gmail tuya.</p>
+<pre><code class="lang-python">mail.smtp.auth=true
+mail.smtp.starttls.enable=true
+mail.smtp.host=smtp.gmail.com
+mail.smtp.port=<span class="hljs-number">587</span>
+mail.smtp.username=Your EMAIL ID
+mail.smtp.password=Password
+</code></pre>
 <h2 id="para-saber-m&#xE1;s-">Para saber m&#xE1;s :</h2>
 <ul>
 <li><a href="https://circuitdigest.com/microcontroller-projects/how-to-install-a-blynk-local-server-on-raspberry-pi" target="_blank">Intalaci&#xF3;n de Blynk : How to Install a Blynk Local Server on Raspberry Pi</a></li>
+<li><a href="https://diyprojects.io/blynk-how-to-install-a-private-local-server-on-raspberry-pi-3-unlimited-energy-test-wemos-dht22/#.YImMULUzY2y" target="_blank">Configuraci&#xF3;n de server.properties.</a></li>
+<li><a href="https://github.com/blynkkk/blynk-server#requirements" target="_blank">Configuraci&#xF3;n mail</a></li>
 </ul>
 <p><div id="page-footer" class="localized-footer"><hr><p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a><br><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Rover Arduino</span> por <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Ver cr&#xE9;ditos</span> bajo licencia <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional License</a>.</p>
 </div></p>
@@ -686,7 +715,7 @@ admin.pass=admin</p>
                 </a>
                 
                 
-                <a href="../creditos.html" class="navigation navigation-next " aria-label="Next page: Créditos">
+                <a href="avanzado4.html" class="navigation navigation-next " aria-label="Next page: 4.4 Cuarto paso: Ejecutar">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -697,7 +726,7 @@ admin.pass=admin</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"4.3 Tercer paso: Blynk","level":"5.4","depth":1,"next":{"title":"Créditos","level":"6.1","depth":1,"path":"creditos.md","ref":"creditos.md","articles":[]},"previous":{"title":"4.2 Segundo paso: Java","level":"5.3","depth":1,"path":"capitulo-cuatro/avanzado2.md","ref":"capitulo-cuatro/avanzado2.md","articles":[]},"dir":"ltr"},"config":{"plugins":["youtube","accordion","styled-blockquotes","localized-footer","edit-link","githubcontributors","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"youtube":{},"accordion":{},"search":{},"styled-blockquotes":{},"localized-footer":{"filename":"./FOOTER.md","hline":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-135691041-2"},"githubcontributors":{"contributorWidth":"300px","githubOwner":"catedu","githubRepository":"<nombre-del-repo>"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edita esta página","base":"https://github.com/catedu/<nombre-del-repo>/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"title":"Rover Arduino","authors":["Ver créditos",""],"collaborators":[{"name":"Javier Quintana","edited":" "}]},"language":"es","gitbook":"*"},"file":{"path":"capitulo-cuatro/avanzado3.md","mtime":"2021-04-28T16:23:13.186Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-04-28T16:23:53.523Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"4.3 Tercer paso: Blynk","level":"5.4","depth":1,"next":{"title":"4.4 Cuarto paso: Ejecutar","level":"5.5","depth":1,"path":"capitulo-cuatro/avanzado4.md","ref":"capitulo-cuatro/avanzado4.md","articles":[]},"previous":{"title":"4.2 Segundo paso: Java","level":"5.3","depth":1,"path":"capitulo-cuatro/avanzado2.md","ref":"capitulo-cuatro/avanzado2.md","articles":[]},"dir":"ltr"},"config":{"plugins":["youtube","accordion","styled-blockquotes","localized-footer","edit-link","githubcontributors","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"youtube":{},"accordion":{},"search":{},"styled-blockquotes":{},"localized-footer":{"filename":"./FOOTER.md","hline":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-135691041-2"},"githubcontributors":{"contributorWidth":"300px","githubOwner":"catedu","githubRepository":"<nombre-del-repo>"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edita esta página","base":"https://github.com/catedu/<nombre-del-repo>/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"title":"Rover Arduino","authors":["Ver créditos",""],"collaborators":[{"name":"Javier Quintana","edited":" "}]},"language":"es","gitbook":"*"},"file":{"path":"capitulo-cuatro/avanzado3.md","mtime":"2021-04-28T17:07:39.682Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-04-28T17:08:58.340Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
