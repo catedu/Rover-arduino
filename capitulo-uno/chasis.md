@@ -2,4 +2,4 @@
 
 ![](/assets/chasis.jpg)
 
-Se elije este chasis por su bajo coste y con tracción 4x4 (en marte no hay carreteras asfaltadas).
+Se elige este chasis por su bajo coste y con tracción 4x4 (en Marte no hay carreteras asfaltadas 🤣).

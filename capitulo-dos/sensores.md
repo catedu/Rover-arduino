@@ -16,6 +16,10 @@ El siguiente código lee el sensor cada 2 seg. y lo vemos por el puerto serie. P
 
 ![](/assets/sensor1.png)
 
+Guardamos el proyecto, lo subimos al arduino y pulsamos en cónsola para ver cómo cambia los valores.
+
+![](/assets/verpuerto.jpg)
+
 ## Probando el sensor DHT22.
 
 Vamos a probar este sensor, que mide a la vez temperatura y humedad. Con el bloque correspondiente, [nos ahorramos bastante código](https://catedu.github.io/programa-arduino-mediante-codigo/control_de_temperatura_y_humedad.html).

@@ -19,7 +19,7 @@ El sensor de efecto Hall y el sensor DHT22 lo conectaremos a las entradas digita
 * DHT22 a D5
 * Efecto Hall al D6
 
-Es recomendable no usar D4 pues lo utilizaremos como Led
+Es recomendable no usar D4 ni D0 pues los utilizaremos como Led
 
 El sensor de luz LDR al ser analógico, lo conectaremos en la única entrada analógica que tiene esta shield
 
