@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>4.4 Cuarto paso: Ejecutar · GitBook</title>
+        <title>4.4 Cuarto paso: Panel control · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -69,7 +69,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../creditos.html" />
+    <link rel="next" href="avanzado5.html" />
     
     
     <link rel="prev" href="avanzado3.html" />
@@ -562,7 +562,20 @@
                 <a href="avanzado4.html">
             
                     
-                    4.4 Cuarto paso: Ejecutar
+                    4.4 Cuarto paso: Panel control
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="avanzado5.html">
+            
+                <a href="avanzado5.html">
+            
+                    
+                    4.5 Quinto paso: En la APP
             
                 </a>
             
@@ -620,7 +633,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >4.4 Cuarto paso: Ejecutar</a>
+        <a href=".." >4.4 Cuarto paso: Panel control</a>
     </h1>
 </div>
 
@@ -635,19 +648,23 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="cuarto-paso-ejecutar">Cuarto paso: Ejecutar</h1>
-<h2 id="ejecutar-el-servidor-blynk-local">Ejecutar el servidor Blynk local</h2>
-<p>En la Raspberry por comandos, entramos en el fichero donde hemos creado el servidor Blynk</p>
-<p><strong>cd Blynk</strong></p>
-<p>Y ejecutamos el servidor Blynk instalado, pero que cargue la configuraci&#xF3;n de server.properties:</p>
-<p><strong>java -jar server-0.41.13-java8.jar -dataFolder /home/pi/Blynk -serverConfig /home/pi/Blynk/server.properties</strong></p>
-<h2 id="panel-de-control-del-servidor-blynk">Panel de control del servidor blynk</h2>
+                                <h1 id="cuarto-paso-panel-de-control-del-servidor-blynk-instalado-localmente">Cuarto paso: Panel de control del servidor BLYNK instalado localmente</h1>
 <p>Desde cualquier ordenador conectado en red, ejecutas en un navegador la siguiente direcci&#xF3;n:</p>
 <p>Si la IP de la Raspberry es 192.168.1.112 entonces entramos en:</p>
 <p><a href="https://192.168.1.112:9443/admin" target="_blank">https://192.168.1.112:9443/admin</a></p>
-<p>Y podemos ver los usuarios creados</p>
-<p>Inncluso podemos ver los <strong>tokens</strong> de los proyectos si falla el env&#xED;o del email</p>
-<h2 id="&#xBF;y-en-la-app">&#xBF;Y en la APP?</h2>
+<p>Con el usuario y contrase&#xF1;a fijada en server.properties :</p>
+<pre><code class="lang-python"> <span class="hljs-comment"># Default admin name and password. Will be created on initial server start</span>
+admin.email=admin@blynk.cc
+admin.<span class="hljs-keyword">pass</span>=admin
+</code></pre>
+<p><em>Nota: Lo he intentado cambiar y no me ha funcionado &#x1F937;&#x200D;&#x2642;&#xFE0F;</em></p>
+<p>Luego entramos</p>
+<p><img src="../assets/avanzado7.jpg" alt=""></p>
+<p>Y podemos ver los usuarios creados (los usuarios se crean desde la APP, luego lo vemos)</p>
+<p><img src="../assets/avanzado8.jpg" alt=""></p>
+<p>Inncluso podemos ver los <strong>tokens</strong>, entrando en un usario, vemos los proyectos y podemos ver el tokens</p>
+<p><img src="../assets/avanzado9.jpg" alt=""></p>
+<p>&#xDA;til si falla el env&#xED;o del email de los tokens</p>
 <p><div id="page-footer" class="localized-footer"><hr><p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a><br><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Rover Arduino</span> por <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Ver cr&#xE9;ditos</span> bajo licencia <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional License</a>.</p>
 </div></p>
 
@@ -682,7 +699,7 @@
                 </a>
                 
                 
-                <a href="../creditos.html" class="navigation navigation-next " aria-label="Next page: Créditos">
+                <a href="avanzado5.html" class="navigation navigation-next " aria-label="Next page: 4.5 Quinto paso: En la APP">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -693,7 +710,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"4.4 Cuarto paso: Ejecutar","level":"5.5","depth":1,"next":{"title":"Créditos","level":"6.1","depth":1,"path":"creditos.md","ref":"creditos.md","articles":[]},"previous":{"title":"4.3 Tercer paso: Blynk","level":"5.4","depth":1,"path":"capitulo-cuatro/avanzado3.md","ref":"capitulo-cuatro/avanzado3.md","articles":[]},"dir":"ltr"},"config":{"plugins":["youtube","accordion","styled-blockquotes","localized-footer","edit-link","githubcontributors","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"youtube":{},"accordion":{},"search":{},"styled-blockquotes":{},"localized-footer":{"filename":"./FOOTER.md","hline":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-135691041-2"},"githubcontributors":{"contributorWidth":"300px","githubOwner":"catedu","githubRepository":"<nombre-del-repo>"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edita esta página","base":"https://github.com/catedu/<nombre-del-repo>/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"title":"Rover Arduino","authors":["Ver créditos",""],"collaborators":[{"name":"Javier Quintana","edited":" "}]},"language":"es","gitbook":"*"},"file":{"path":"capitulo-cuatro/avanzado4.md","mtime":"2021-04-28T17:07:39.682Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-04-28T17:08:58.340Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"4.4 Cuarto paso: Panel control","level":"5.5","depth":1,"next":{"title":"4.5 Quinto paso: En la APP","level":"5.6","depth":1,"path":"capitulo-cuatro/avanzado5.md","ref":"capitulo-cuatro/avanzado5.md","articles":[]},"previous":{"title":"4.3 Tercer paso: Blynk","level":"5.4","depth":1,"path":"capitulo-cuatro/avanzado3.md","ref":"capitulo-cuatro/avanzado3.md","articles":[]},"dir":"ltr"},"config":{"plugins":["youtube","accordion","styled-blockquotes","localized-footer","edit-link","githubcontributors","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"youtube":{},"accordion":{},"search":{},"styled-blockquotes":{},"localized-footer":{"filename":"./FOOTER.md","hline":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-135691041-2"},"githubcontributors":{"contributorWidth":"300px","githubOwner":"catedu","githubRepository":"<nombre-del-repo>"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edita esta página","base":"https://github.com/catedu/<nombre-del-repo>/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"title":"Rover Arduino","authors":["Ver créditos",""],"collaborators":[{"name":"Javier Quintana","edited":" "}]},"language":"es","gitbook":"*"},"file":{"path":"capitulo-cuatro/avanzado4.md","mtime":"2021-04-29T08:29:25.208Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-04-29T08:30:11.581Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
