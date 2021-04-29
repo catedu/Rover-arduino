@@ -25,7 +25,7 @@ Por último una vez finalizado, comprobamos la versión que coje por defecto
 Tiene que salir
 Openjdk version 1.8.0 etc...
 
-## Si no sale esa versión, sale una más actualicemos
+## Si no sale esa versión...
 
 Suele pasar que tenga ya instalado la versión 11, tenemos que obligar a que sea la 8 por defecto, para ello ejecutamos
 
@@ -61,6 +61,6 @@ Y tiene que salir :
 
 ## Para más cosas
 
-Por ejemplo, desistalarlo, volver a la 11, etc.. visitar esta página :
+Por ejemplo, desinstalarlo, volver a la 11, etc.. visitar esta página :
 
 https://phoenixnap.com/kb/install-java-raspberry-pi
