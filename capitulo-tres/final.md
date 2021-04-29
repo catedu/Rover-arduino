@@ -37,4 +37,12 @@ Ponemos los siguiente controles
 1. El Gauge de Luz al analógico
 1. Un botón al D4
 
+**¿Hay bastante energía para poner todos estos Widgets con la cuenta gratuita de Blynk?**
+
+Pues sí, pero no nos queda para mucho más :
+
+![](/assets/avanzado19.jpg)
+
+El panel está completo :
+
 ![](/assets/avanzado18.png)
