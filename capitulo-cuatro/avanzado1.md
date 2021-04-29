@@ -11,7 +11,7 @@ Para instalar un **sistema operativo Raspbian** en una Raspberry aconsejamos ver
 
 https://catedu.github.io/raspberry-muy-basico/3-raspbian.html
 
-Una vez instalado hay que **conectarlo a la red wifi**, para ello seguir estos apuntes:
+Una vez instalado hay que **conectarlo a la red wifi** y **ponerle una IP FIJA**, para ello seguir estos apuntes:
 
 https://catedu.github.io/raspberry-muy-basico/4-primera-comunicacion.html
 

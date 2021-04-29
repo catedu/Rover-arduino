@@ -33,7 +33,7 @@ Suele pasar que tenga ya instalado la versión 11, tenemos que obligar a que sea
 
 ![](/assets/avanzado5.jpg)
 
-Si seleccionamos el 2 podemos comprobar que ya nos sale la versión con la orden :
+Si seleccionamos el 2 nos lo pondrá como por defecto (sale con un (*). Podemos comprobar que ya nos sale la versión con la orden :
 
 **java –version**
 
@@ -43,7 +43,7 @@ Para ponerlo por defecto, edita el fichero *environment*
 
 **sudo nano /etc/environment**
 
-Y si en la orden **sudo update-alternatives --config java** salía que la carpeta donde está la versión 8 es *OpenJDK 8 path – /usr/lib/jvm/java-8-openjdk-armhf/jre/bin/java*  luego tenemos que poner en el fichero *environment* :
+Y si en la orden **sudo update-alternatives --config java** salía que la carpeta donde está la versión 8 es */usr/lib/jvm/java-8-openjdk-armhf/jre/bin/java*  luego tenemos que poner en el fichero *environment* :
 
 **JAVA_HOME="/usr/lib/jvm/java-8-openjdk-armhf/jre/bin/java"**
 
@@ -54,6 +54,10 @@ Guardar, reiniciar
 Y comprueba
 
 **java –version**
+
+Y tiene que salir :
+
+![](/assets/avanzado6.jpg)
 
 ## Para más cosas
 

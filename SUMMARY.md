@@ -46,7 +46,8 @@
 * [4.2 Primer paso: Raspberry](capitulo-cuatro/avanzado1.md)
 * [4.2 Segundo paso: Java](capitulo-cuatro/avanzado2.md)
 * [4.3 Tercer paso: Blynk](capitulo-cuatro/avanzado3.md)
-* [4.4 Cuarto paso: Ejecutar](capitulo-cuatro/avanzado4.md)
+* [4.4 Cuarto paso: Panel control](capitulo-cuatro/avanzado4.md)
+* [4.5 Quinto paso: En la APP](capitulo-cuatro/avanzado5.md)
 
 
 
