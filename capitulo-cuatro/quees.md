@@ -10,9 +10,12 @@ Estamos liberados de la limitación del número de controles que podemos poner e
 
 ![](/assets/avanzado1.jpg)
 
+>**info**
+> Otra ventaja de usar servidor local BLYNK es que el correo puede ser ficticio, BLYNK no podrá enviar el Token pero sí que podemos saber el Token en el panel de control, esto lo veremos [en el punto 4.4](https://catedu.github.io/Rover-arduino/capitulo-cuatro/avanzado4.html). Es una solución para los alumnos menores de 16 años pues legalmente no pueden tener email.
+
 ## Desventajas
 
-Nuestro rover, la Raspberry y nuestro móvil **tiene que estar en la misma red local**
+Nuestro rover, la Raspberry y nuestro móvil **tiene que estar en la misma red local** esto imposibilita que el alumno pueda trabajar en casa.
 
 ![](/assets/esquema2.gif)
 
