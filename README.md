@@ -11,3 +11,5 @@ En este curso trataremos de manejar el rover propuesto utilizando las siguientes
   En resumen: Manejamos nuestro rover y visualizaremos sus sensores con una App.
 
   ![](/assets/esquema.gif)
+
+  ![](/assets/foto.jpg)

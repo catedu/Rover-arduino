@@ -6,7 +6,11 @@ Si la IP de la Raspberry es 192.168.1.112 entonces entramos en:
 
 https://192.168.1.112:9443/admin
 
-Con el usuario y contraseña fijada en server.properties :
+Seguramente te saldrá la siguiente advertencia por el certificado SSL, dale a **Configuración avanzada** y luego a **Acceder a (la ip de tu Raspberry) sitio no seguro**
+
+![](/assets/avanzada20.jpg)
+
+Tienes que entrar con el usuario y contraseña fijada en server.properties :
 
 ```python
  # Default admin name and password. Will be created on initial server start
