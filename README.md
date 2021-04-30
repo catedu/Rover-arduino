@@ -1,6 +1,5 @@
 # ROVER MARCIANO CON NodeMCU ARDUINOBLOCKS y BLYNK
 
-![](/assets/rover.jpg)
 
 En este curso trataremos de manejar el rover propuesto utilizando las siguientes herramientas:
 
