@@ -39,7 +39,8 @@
 * [3.6 Medir T y H](capitulo-tres/DHT22.md)
 * [3.7 Medir campo magnético](capitulo-tres/hall.md)
 * [3.8 Motores](capitulo-tres/motores.md)
-* [3.9 Proyecto final](capitulo-tres/final.md)
+* [3.9 Joystick](capitulo-tres/joystick.md)
+* [3.10 Proyecto final](capitulo-tres/final.md)
 
 ## 4 AVANZADO: SERVIDOR BLYNK LOCAL
 
