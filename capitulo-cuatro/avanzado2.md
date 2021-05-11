@@ -64,3 +64,6 @@ Y tiene que salir :
 Por ejemplo, desinstalarlo, volver a la 11, etc.. visitar esta página :
 
 https://phoenixnap.com/kb/install-java-raspberry-pi
+
+
+{% youtube %} https://www.youtube.com/watch?v=33ynNkvfvWU{% endyoutube %} 

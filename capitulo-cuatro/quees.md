@@ -25,4 +25,8 @@ Es un esfuerzo configurar la Raspberry pero no es una cosa que tenemos que expli
 
 ![](/assets/avanzado3.png)
 
-Además de tener control via web de todos usuarios, pues tú eres el administrador:
+Además de tener control via web de todos usuarios, pues tú eres el administrador.
+
+## Para saber más ...
+
+La documentación oficial de la instalación de Blynk está aquí : https://docs.blynk.cc/

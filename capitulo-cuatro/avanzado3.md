@@ -73,7 +73,11 @@ Y ejecutamos el servidor Blynk instalado, pero que cargue la configuración de s
 **java -jar server-0.41.13-java8.jar -dataFolder /home/pi/Blynk -serverConfig /home/pi/Blynk/server.properties**
 
 >**tip**
->Para no repetir estos dos comandos cd Blynk y java -jar server-0.41.13-java8.jar -dataFolder /home/pi/Blynk -serverConfig /home/pi/Blynk/server.properties cada vez qye reiniciamos la Raspberry puedes generar un script para que lo ejecute automáticamente, puedes ver buenos tutoriales en Internet, por ejemplo [aquí](https://openhardware.pe/raspberry-pi-ejecucion-de-programas-en-el-arranque-del-s-o/)
+>Para no repetir estos dos comandos cd Blynk y java -jar server-0.41.13-java8.jar -dataFolder /home/pi/Blynk -serverConfig /home/pi/Blynk/server.properties cada vez qye reiniciamos la Raspberry puedes generar un script para que lo ejecute automáticamente, puedes ver buenos tutoriales en Internet.
+>Por ejemplo, usar el comando
+> **crontab -e**
+>y puner al final la siguiente línea
+>**@reboot java -jar /home/pi/Blynk/server-0.41.13-java8.jar -dataFolder /home/pi/Blynk -serverConfig /home/pi/Blynk/server.properties**
 
 ## E.-Para saber más :
 
