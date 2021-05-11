@@ -698,23 +698,60 @@
 <p>Entra en la carpeta creada Blynk y crea el fichero <em>server.properties</em>.</p>
 <p><strong>cd Blynk</strong></p>
 <p><strong>sudo nano server.properties</strong></p>
-<p>A continuaci&#xF3;n se muestra una muestra del posible contenido de server.properties.</p>
-<pre><code class="lang-python"><span class="hljs-comment">#Definir los puertos para que no se solapen</span>
-<span class="hljs-comment">#http and web sockets port</span>
-http.port=<span class="hljs-number">8080</span>
-<span class="hljs-comment">#https and web sockets port,</span>
-https.port=<span class="hljs-number">9443</span>
-<span class="hljs-comment">#application ssl port</span>
-app.ssl.port=<span class="hljs-number">8443</span>
-<span class="hljs-comment"># para permitir administrar la p&#xE1;gina de administrador fuera, (si no lo haces tiene que ser en https://127.0.0.1:9443/admin) luego</span>
- allowed.administrator.ips=<span class="hljs-number">0.0</span><span class="hljs-number">.0</span><span class="hljs-number">.0</span>/<span class="hljs-number">0</span>
-<span class="hljs-comment"># es decir si la ip de la raspberry es 192.168.1.112 luego puedo administrarlo fuera en n https://192.168.1.112:9443/admin</span>
-admin.rootPath=/admin
-<span class="hljs-comment"># Default admin name and password. Will be created on initial server start</span>
+<p>A continuaci&#xF3;n se muestra un posible contenido de server.properties.</p>
+<pre><code class="lang-python">initial.energy=<span class="hljs-number">1000000</span>
+allow.reading.widget.without.active.app=false
+user.message.quota.limit=<span class="hljs-number">100</span>
+logs.folder=./logs
+user.dashboard.max.limit=<span class="hljs-number">100</span>
+lcd.strings.pool.size=<span class="hljs-number">6</span>
+server.ssl.key=./server_embedded.key
+webhooks.response.size.limit=<span class="hljs-number">96</span>
+hardware.mqtt.port=<span class="hljs-number">8440</span>
+table.rows.pool.size=<span class="hljs-number">100</span>
+terminal.strings.pool.size=<span class="hljs-number">25</span>
 admin.email=admin@blynk.cc
+admin.rootPath=/admin
+user.widget.max.size.limit=<span class="hljs-number">20</span>
+listen.address=
+blocking.processor.thread.pool.limit=<span class="hljs-number">6</span>
+stats.<span class="hljs-keyword">print</span>.worker.period=<span class="hljs-number">60000</span>
+enable.db=false
+force.port<span class="hljs-number">.80</span>.<span class="hljs-keyword">for</span>.csv=false
+enable.raw.db.data.store=true
+restore.host=blynk-cloud.com
+csv.export.data.points.max=<span class="hljs-number">43200</span>
+restore=false
+user.profile.max.size=<span class="hljs-number">256</span>
+allow.store.ip=true
+allowed.administrator.ips=<span class="hljs-number">0.0</span><span class="hljs-number">.0</span><span class="hljs-number">.0</span>/<span class="hljs-number">0</span>,::/<span class="hljs-number">0</span>
+net.interface=eth
+webhooks.frequency.user.quota.limit=<span class="hljs-number">1000</span>
+http.port=<span class="hljs-number">8080</span>
+web.request.max.size=<span class="hljs-number">524288</span>
+user.devices.limit=<span class="hljs-number">50</span>
+<span class="hljs-keyword">async</span>.logger.ring.buffer.size=<span class="hljs-number">2048</span>
+user.tags.limit=<span class="hljs-number">100</span>
+server.ssl.key.<span class="hljs-keyword">pass</span>=
 admin.<span class="hljs-keyword">pass</span>=admin
+hard.socket.idle.timeout=<span class="hljs-number">10</span>
+product.name=Blynk
+data.folder=/Path
+map.strings.pool.size=<span class="hljs-number">25</span>
+profile.save.worker.period=<span class="hljs-number">60000</span>
+https.port=<span class="hljs-number">9443</span>
+log.level=info
+server.ssl.cert=./server_embedded.crt
+force.port<span class="hljs-number">.80</span>.<span class="hljs-keyword">for</span>.redirect=true
+notifications.queue.limit=<span class="hljs-number">2000</span>
+notifications.frequency.user.quota.limit=<span class="hljs-number">5</span>
+server.host=<span class="hljs-number">192.168</span><span class="hljs-number">.137</span><span class="hljs-number">.1</span>
+app.ssl.port=<span class="hljs-number">8443</span>
+hardware.default.port=<span class="hljs-number">8442</span>
+hardware.ssl.port=<span class="hljs-number">8441</span>
+hardware.mqtt.port=<span class="hljs-number">8440</span>
 </code></pre>
-<p>No es la &#xFA;nica configuraci&#xF3;n, se puede mejorar : <a href="https://github.com/blynkkk/blynk-server/blob/master/server/core/src/main/resources/server.properties" target="_blank">aqu&#xED; por ejemplo tienes otra propuesta de server.properties</a></p>
+<p>Para la explicaci&#xF3;n de cada l&#xED;nea, aconsejo consultar esta <a href="https://www.sysadminsdecuba.com/2020/04/instalando-blynk-server-localmente/" target="_blank">p&#xE1;gina</a> en el apartado <em>Configuraci&#xF3;n avanzada del servidor local</em></p>
 <h2 id="c--configurar-mailproperties">C.- Configurar mail.properties</h2>
 <p>Igualmente hay que crear este fichero para que el servidor env&#xED;e por email los tokens de los proyectos</p>
 <p>Entra en la carpeta creada Blynk y crea el fichero <em>mail.properties</em>.</p>
@@ -792,7 +829,7 @@ y puner al final la siguiente l&#xED;nea
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"4.3 Blynk","level":"5.4","depth":1,"next":{"title":"4.4 Panel control","level":"5.5","depth":1,"path":"capitulo-cuatro/avanzado4.md","ref":"capitulo-cuatro/avanzado4.md","articles":[]},"previous":{"title":"4.2 Java","level":"5.3","depth":1,"path":"capitulo-cuatro/avanzado2.md","ref":"capitulo-cuatro/avanzado2.md","articles":[]},"dir":"ltr"},"config":{"plugins":["youtube","accordion","styled-blockquotes","localized-footer","edit-link","githubcontributors","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"youtube":{},"accordion":{},"search":{},"styled-blockquotes":{},"localized-footer":{"filename":"./FOOTER.md","hline":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-135691041-2"},"githubcontributors":{"contributorWidth":"300px","githubOwner":"catedu","githubRepository":"<nombre-del-repo>"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edita esta página","base":"https://github.com/catedu/<nombre-del-repo>/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"title":"Rover Arduino","authors":["Javier Quintana",""],"collaborators":[{"name":"Javier Quintana","edited":""}]},"language":"es","gitbook":"*"},"file":{"path":"capitulo-cuatro/avanzado3.md","mtime":"2021-05-11T11:57:02.317Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-11T11:57:53.151Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"4.3 Blynk","level":"5.4","depth":1,"next":{"title":"4.4 Panel control","level":"5.5","depth":1,"path":"capitulo-cuatro/avanzado4.md","ref":"capitulo-cuatro/avanzado4.md","articles":[]},"previous":{"title":"4.2 Java","level":"5.3","depth":1,"path":"capitulo-cuatro/avanzado2.md","ref":"capitulo-cuatro/avanzado2.md","articles":[]},"dir":"ltr"},"config":{"plugins":["youtube","accordion","styled-blockquotes","localized-footer","edit-link","githubcontributors","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"youtube":{},"accordion":{},"search":{},"styled-blockquotes":{},"localized-footer":{"filename":"./FOOTER.md","hline":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-135691041-2"},"githubcontributors":{"contributorWidth":"300px","githubOwner":"catedu","githubRepository":"<nombre-del-repo>"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edita esta página","base":"https://github.com/catedu/<nombre-del-repo>/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"title":"Rover Arduino","authors":["Javier Quintana",""],"collaborators":[{"name":"Javier Quintana","edited":""}]},"language":"es","gitbook":"*"},"file":{"path":"capitulo-cuatro/avanzado3.md","mtime":"2021-05-11T17:57:54.287Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-11T17:58:41.968Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
