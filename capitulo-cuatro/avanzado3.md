@@ -88,8 +88,7 @@ Entra en la carpeta creada Blynk y crea el fichero *mail.properties*.
 
 **sudo nano mail.properties**
 
-A continuación se muestra una muestra del posible contenido de mail.properties utilizando los datos de una cuenta de gmail tuya.
-
+A continuación se muestra una muestra del posible contenido de mail.properties :
 ```python
 mail.smtp.auth=true
 mail.smtp.starttls.enable=true
@@ -98,6 +97,11 @@ mail.smtp.port=587
 mail.smtp.username=Your EMAIL ID
 mail.smtp.password=Password
 ```
+
+Utilizando **Your EMAIL ID** y **Password** los datos de una cuenta de gmail tuya. En esa cuenta tienes que permitir accesos no seguros.
+
+![](/assets/cuentagoogle.jpg)
+
 
 ## D.- Ejecutar el servidor Blynk local
 
