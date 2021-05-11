@@ -20,26 +20,63 @@ Entra en la carpeta creada Blynk y crea el fichero *server.properties*.
 
 **sudo nano server.properties**
 
-A continuación se muestra una muestra del posible contenido de server.properties.
+A continuación se muestra un posible contenido de server.properties.
 
 ```python
-#Definir los puertos para que no se solapen
-#http and web sockets port
-http.port=8080
-#https and web sockets port,
-https.port=9443
-#application ssl port
-app.ssl.port=8443
-# para permitir administrar la página de administrador fuera, (si no lo haces tiene que ser en https://127.0.0.1:9443/admin) luego
- allowed.administrator.ips=0.0.0.0/0
-# es decir si la ip de la raspberry es 192.168.1.112 luego puedo administrarlo fuera en n https://192.168.1.112:9443/admin
-admin.rootPath=/admin
-# Default admin name and password. Will be created on initial server start
+initial.energy=1000000
+allow.reading.widget.without.active.app=false
+user.message.quota.limit=100
+logs.folder=./logs
+user.dashboard.max.limit=100
+lcd.strings.pool.size=6
+server.ssl.key=./server_embedded.key
+webhooks.response.size.limit=96
+hardware.mqtt.port=8440
+table.rows.pool.size=100
+terminal.strings.pool.size=25
 admin.email=admin@blynk.cc
+admin.rootPath=/admin
+user.widget.max.size.limit=20
+listen.address=
+blocking.processor.thread.pool.limit=6
+stats.print.worker.period=60000
+enable.db=false
+force.port.80.for.csv=false
+enable.raw.db.data.store=true
+restore.host=blynk-cloud.com
+csv.export.data.points.max=43200
+restore=false
+user.profile.max.size=256
+allow.store.ip=true
+allowed.administrator.ips=0.0.0.0/0,::/0
+net.interface=eth
+webhooks.frequency.user.quota.limit=1000
+http.port=8080
+web.request.max.size=524288
+user.devices.limit=50
+async.logger.ring.buffer.size=2048
+user.tags.limit=100
+server.ssl.key.pass=
 admin.pass=admin
+hard.socket.idle.timeout=10
+product.name=Blynk
+data.folder=/Path
+map.strings.pool.size=25
+profile.save.worker.period=60000
+https.port=9443
+log.level=info
+server.ssl.cert=./server_embedded.crt
+force.port.80.for.redirect=true
+notifications.queue.limit=2000
+notifications.frequency.user.quota.limit=5
+server.host=192.168.137.1
+app.ssl.port=8443
+hardware.default.port=8442
+hardware.ssl.port=8441
+hardware.mqtt.port=8440
 
 ```
-No es la única configuración, se puede mejorar : [aquí por ejemplo tienes otra propuesta de server.properties](https://github.com/blynkkk/blynk-server/blob/master/server/core/src/main/resources/server.properties)
+Para la explicación de cada línea, aconsejo consultar esta [página](https://www.sysadminsdecuba.com/2020/04/instalando-blynk-server-localmente/) en el apartado *Configuración avanzada del servidor local*
 
 ## C.- Configurar mail.properties
 

@@ -10,6 +10,9 @@ Seguramente te saldrá la siguiente advertencia por el certificado SSL, dale a *
 
 ![](/assets/avanzada20.jpg)
 
+>**tip**
+>Si quieres generar certificados SSL propios para que no salga la anterior pantalla consulta [aquí](https://www.sysadminsdecuba.com/2020/04/instalando-blynk-server-localmente/)
+
 Tienes que entrar con el usuario y contraseña fijada en server.properties :
 
 ```python
