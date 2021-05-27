@@ -27,6 +27,9 @@ Es un esfuerzo configurar la Raspberry pero no es una cosa que tenemos que expli
 
 Además de tener control via web de todos usuarios, pues tú eres el administrador.
 
+>**info**
+> SI TU CENTRO ES UN CENTRO VITALINUX seguramente tendrá un servidor local. Ponte en contacto con nosotros soportecatedu@educa.aragon.es y te instalamos remotamente.
+
 ## Para saber más ...
 
 La documentación oficial de la instalación de Blynk está aquí : https://docs.blynk.cc/
