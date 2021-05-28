@@ -12,4 +12,9 @@ Y configuramos uno para V5 y otro para V6:
 
 ![](/assets/blynk34.png)
 
+>**info**
+> No te olvides de pulsar el botón de la Shield para que le de energía a los Motores
+
+![](/assets/boton.jpg)
+
 {% youtube %}https://youtu.be/fhz5tYRrmAk{% endyoutube %}
