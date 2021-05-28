@@ -98,7 +98,7 @@ mail.smtp.username=Your EMAIL ID
 mail.smtp.password=Password
 ```
 
-Utilizando **Your EMAIL ID** y **Password** los datos de una cuenta de gmail tuya. En esa cuenta tienes que permitir accesos no seguros.
+Utilizando **Your EMAIL ID** y **Password** los datos de una cuenta de gmail tuya. En esa cuenta tienes que permitir accesos no seguros. Aquí se muestra dónde está en la pantalla de configuración de Gmail :
 
 ![](/assets/cuentagoogle.jpg)
 

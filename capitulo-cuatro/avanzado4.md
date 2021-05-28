@@ -20,7 +20,7 @@ Tienes que entrar con el usuario y contraseña fijada en server.properties :
 admin.email=admin@blynk.cc
 admin.pass=admin
 ```
-*Nota: Lo he intentado cambiar y no me ha funcionado 🤷‍♂️*
+Nota: Lo he intentado cambiar y no me ha funcionado 🤷‍♂️
 
 Luego entramos
 
@@ -30,7 +30,7 @@ Y podemos ver los usuarios creados (los usuarios se crean desde la APP, luego lo
 
 ![](/assets/avanzado8.jpg)
 
-Inncluso podemos ver los **tokens**, entrando en un usario, vemos los proyectos y podemos ver el tokens
+Inncluso podemos ver los **tokens** y los proyectos, entrando en un usario.
 
 ![](/assets/avanzado9.jpg)
 
