@@ -15,8 +15,8 @@ jobs:
           token: ${{ secrets.PERSONAL_TOKEN_GITBOOK_ACTION }}
           source_dir: .
           gitbook_pdf: true
-          gitbook_pdf_name: <nombre-del-libro-sin-extension>
+          gitbook_pdf_name: Rover-arduino
           gitbook_epub: true
-          gitbook_epub_name: <nombre-del-libro-sin-extension>
+          gitbook_epub_name: Rover-arduino
           gitbook_mobi: true
-          gitbook_mobi_name: <nombre-del-libro-sin-extension>
+          gitbook_mobi_name: Rover-arduino
