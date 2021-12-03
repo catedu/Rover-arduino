@@ -16,6 +16,10 @@ Lo primero que tenemos que elegir es para qué tipo de placa se hace el proyecto
 
 ![](/assets/arduinoblocks5.jpg)
 
+Actualización (03/12/21): Ahora sale este desplegable :
+
+![](/assets/arduinoblocks6.png)
+
 Luego el nombre y el resto de campos es optativo pero importante y buena costumbre rellenarlos, sobre todo si el proyecto lo compartimos:
 
 * Descripción

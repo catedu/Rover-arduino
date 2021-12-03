@@ -1,10 +1,14 @@
 # Primer programa con Blynk: Encender D0 : 3 ARDUINOBLOCKS
 
-Ahora le tenemos que decir a nuestro NodeMCU la configuración de la Wifi, y el Token uqe hemos recibido, ¿cómo? muy fácil, con ARDUINOBLOCKS
+Ahora le tenemos que decir a nuestro NodeMCU la configuración de la Wifi, y el Token que hemos recibido, ¿cómo? muy fácil, con ARDUINOBLOCKS
 
 Abrimos un proyecto y ponemos estra instrucción :
 
 ![](/assets/blynk13.jpg)
+
+Nota: Actualización 3/12/21 ahora en ArduinoBlocks hay que hacerlo en dos bloques
+
+![](/assets/blynk-iniciar.png)
 
 Donde :
 
